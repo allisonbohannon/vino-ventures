@@ -1,38 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import WineryCard from '../components/WineryCard'
-import {Box, Grid} from '@mui/material'
-import { styled } from '@mui/material/styles';
+import {Box} from '@mui/material'
+import Sidebar from '../components/Sidebar';
 
-
-const Container = styled(Box) (({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    position: "relative",
-    top: "5em",
-    width: "100vw",
-    display: "flex",
-    flexDirection: "row", 
-    flexWrap: "wrap",
-    alignItems: "center",
-    justifyContent: "center",
-    overflow: "hidden",
-  }));
 
 function Wineries({wineries}) {
 
-    const displayWineries = wineries.map(winery=> {
-        return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
+    const [cityFilter, setCityFilter] = useState([])
+
+    const displayWineries = wineries.filter(winery => cityFilter.includes(winery.city))
+        .map(winery=> {
+            return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
     })
     
   return (
-    <Box sx={{}}>
+    <Box sx={{display:'flex', justifyContent:"space-between", position:"relative"}}>
+        <Sidebar cityFilter={cityFilter} setCityFilter={setCityFilter} />
+        <Box sx={{marginLeft:"160px"}}>
             {displayWineries}
+        </Box>
     </Box>
-    
-  
+   
   )
 }
 
