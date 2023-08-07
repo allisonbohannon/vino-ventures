@@ -2,6 +2,7 @@
 import { useState, useEffect, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import Wineries from "../pages/Wineries";
+import TopNav from "./TopNav";
 
 
 
@@ -24,7 +25,7 @@ function App() {
 
     return (
         <div>
-            {/* <NavigationBar /> */}
+            <TopNav />
             <Routes>
                 <Route path="/" element={<Wineries
                     wineries={wineries}

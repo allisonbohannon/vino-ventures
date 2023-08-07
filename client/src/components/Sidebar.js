@@ -13,7 +13,7 @@ function Sidebar({cities, cityFilter, setCityFilter}) {
     })
 
   return (
-    <Box sx={{display:"block", width:"160px", height:"100%", position:"fixed", backgroundColor:"beige", overflow:"auto"}}>
+    <Box sx={{display:"block", width:"20%", height:"100%", position:"fixed", top:"10%", backgroundColor:"beige", overflow:"auto"}}>
         <List>
             {displayCities}
         </List>

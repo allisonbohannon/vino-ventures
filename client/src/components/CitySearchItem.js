@@ -17,7 +17,7 @@ const CitySearchItem = ({city, cityFilter, setCityFilter}) => {
 
   return (
     <ListItemButton onClick={handleClick}>   
-        {included ? <Typography sx={{fontWeight:"bold"}}>{city}</Typography> : <Typography>{city}</Typography> }
+        {included ? <Typography variant="h5" sx={{fontWeight:"bold"}}>{city}</Typography> : <Typography variant="h5" >{city}</Typography> }
     </ListItemButton>
   )
 }
