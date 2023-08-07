@@ -18,9 +18,9 @@ function Wineries({wineries, cities}) {
 })
     
   return (
-    <Box sx={{display:'flex', justifyContent:"space-between", position:"relative"}}>
+    <Box sx={{display:'flex', justifyContent:"space-between", position:"relative", top:"80px"}}>
         <Sidebar  cities={cities} cityFilter={cityFilter} setCityFilter={setCityFilter} />
-        <Box sx={{marginLeft:"160px"}}>
+        <Box sx={{marginLeft:"30%", position:"absolute", right:0}}>
             {cityFilter.length === 0 ? displayAllWineries : displayFilteredWineries}
         </Box>
     </Box>

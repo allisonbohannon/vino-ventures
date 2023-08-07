@@ -9,11 +9,11 @@ function WineryCard({winery}) {
   const handleClick = () => {navigate(`/`)}
 
   return (
-    <CardActionArea onClick={handleClick} sx={{ margin:"1em", width:"80%"}}>
+    <CardActionArea onClick={handleClick} sx={{ margin:"1em", width:"90%"}}>
         <Card variant="outlined" sx={{display:'flex', justifyContent:"space-between"}}>
-            <CardMedia sx={{display:"block"}} >
+            <CardMedia sx={{display:"flex", padding:".5em"}} >
                 <img 
-                    style={{ display:"block", maxHeight:250, maxWidth:250, margin:".5em", left:0}}
+                    style={{ display:"block", maxHeight:250, maxWidth:250, margin:"auto", border:"1px solid lightgray"}}
                     src={winery.imagesrc}
                     title="winery photo"
                     />
@@ -24,11 +24,14 @@ function WineryCard({winery}) {
                 <Divider />
                 <br></br>
                 <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
-                <br></br>
-                <Box sx={{display:"block", textAlign:"center"}}>
-                    <Typography >Reservations Policy: {winery.rezrequired} </Typography>
-                    <Typography> Tasting Cost: ${winery.tastingcost}</Typography>
+                <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>
+                    {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
+                    <span sx={{display:"inline"}}>
+                        <Typography sx={{display:"block", fontWeight:"bold"}}>Reservations Policy: </Typography>
+                        <Typography sx={{display:"block"}}>{winery.rezrequired}</Typography>
+                    </span>
                 </Box>
+                <br></br>
                 <span>
                     <Box sx={{position:"absolute", bottom:0}}>
                         <Typography>{winery.address1}</Typography>
