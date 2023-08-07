@@ -6,7 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const TopNav = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="fixed" sx={{backgroundColor:"#722F37  "}}>
+        <AppBar position="fixed" sx={{backgroundColor:"#722F37"}}>
         <Toolbar>
           <IconButton
             size="large"

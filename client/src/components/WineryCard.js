@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Card, CardActionArea, CardContent, CardMedia, Typography, Box, IconButton, Divider } from '@mui/material'
+import { Card, CardActionArea, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper } from '@mui/material'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function WineryCard({winery}) {
@@ -9,7 +9,7 @@ function WineryCard({winery}) {
   const handleClick = () => {navigate(`/`)}
 
   return (
-    <CardActionArea onClick={handleClick} sx={{ margin:"1em", width:"90%"}}>
+    <Paper elevation="1" sx={{ margin:"1em", width:"90%"}}>
         <Card variant="outlined" sx={{display:'flex', justifyContent:"space-between"}}>
             <CardMedia sx={{display:"flex", padding:".5em"}} >
                 <img 
@@ -26,10 +26,12 @@ function WineryCard({winery}) {
                 <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
                 <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>
                     {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
+                   
                     <span sx={{display:"inline"}}>
-                        <Typography sx={{display:"block", fontWeight:"bold"}}>Reservations Policy: </Typography>
-                        <Typography sx={{display:"block"}}>{winery.rezrequired}</Typography>
+                            <Typography sx={{display:"block", fontWeight:"bold"}}>Reservations Policy: </Typography>
+                            {winery.rezrequired ? <Typography sx={{display:"block"}}>{winery.rezrequired}</Typography> : "unknown"}
                     </span>
+                   
                 </Box>
                 <br></br>
                 <span>
@@ -41,11 +43,10 @@ function WineryCard({winery}) {
                         <FavoriteBorderIcon />
                    </IconButton>
                 </span>
-               
                 
             </CardContent>
         </Card>
-    </CardActionArea>
+    </Paper>
 
   )
 }
