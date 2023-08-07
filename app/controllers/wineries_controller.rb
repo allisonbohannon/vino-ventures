@@ -38,6 +38,12 @@ class WineriesController < ApplicationController
     @winery.destroy
   end
 
+  #show uniq list of all cities in db
+  def cities 
+    cities = Winery.all.map {|i| i.city}.uniq.sort
+    render json: cities
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_winery
