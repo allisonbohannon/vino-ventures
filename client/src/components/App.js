@@ -8,6 +8,7 @@ import Wineries from "../pages/Wineries";
 function App() {
 
     const [wineries, setWineries] = useState([])
+    const [cities, setCities] = useState([])
 
     //Set initial states 
 
@@ -15,6 +16,10 @@ function App() {
         fetch(`/wineries`)
         .then(r => r.json())
         .then(data => setWineries(data))
+
+        fetch(`/cities`)
+        .then(r => r.json())
+        .then(data => setCities(data))
       }, []);
 
     return (
@@ -23,6 +28,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Wineries
                     wineries={wineries}
+                    cities={cities}
                 />}/>
             </Routes>
         </div>

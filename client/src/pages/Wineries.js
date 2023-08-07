@@ -4,20 +4,24 @@ import {Box} from '@mui/material'
 import Sidebar from '../components/Sidebar';
 
 
-function Wineries({wineries}) {
+function Wineries({wineries, cities}) {
 
     const [cityFilter, setCityFilter] = useState([])
 
-    const displayWineries = wineries.filter(winery => cityFilter.includes(winery.city))
-        .map(winery=> {
-            return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
+    const displayAllWineries = wineries.map(winery=> {
+        return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
     })
+
+    const displayFilteredWineries = wineries.filter(winery => cityFilter.includes(winery.city))
+     .map(winery=> {
+        return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
+})
     
   return (
     <Box sx={{display:'flex', justifyContent:"space-between", position:"relative"}}>
-        <Sidebar cityFilter={cityFilter} setCityFilter={setCityFilter} />
+        <Sidebar  cities={cities} cityFilter={cityFilter} setCityFilter={setCityFilter} />
         <Box sx={{marginLeft:"160px"}}>
-            {displayWineries}
+            {cityFilter.length === 0 ? displayAllWineries : displayFilteredWineries}
         </Box>
     </Box>
    
