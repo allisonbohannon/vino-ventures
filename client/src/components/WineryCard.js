@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Card, CardActionArea, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper, Stack } from '@mui/material'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function WineryCard({winery}) {
@@ -19,20 +19,18 @@ function WineryCard({winery}) {
                     />
             </CardMedia>
             <CardContent sx={{display:"block", position:"relative"}}>
-                <Typography variant="h4" sx={{textAlign:"center"}}>{winery.name}</Typography>
+                <Typography variant="h4" sx={{textAlign:"center", color:"#722F37"}}>{winery.name}</Typography>
                 <Typography variant="h6" sx={{textAlign:"center", color:"gray"}}>{winery.city}</Typography>
                 <Divider />
                 <br></br>
                 <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
                 <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>
                     {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
-                   
-                    <span sx={{display:"inline"}}>
-                            <Typography sx={{display:"block", fontWeight:"bold"}}>Reservations Policy: </Typography>
-                            {winery.rezrequired ? <Typography sx={{display:"block"}}>{winery.rezrequired}</Typography> : "unknown"}
-                    </span>
-                   
                 </Box>
+                <Stack direction="row" sx={{mb:".5em"}}>
+                            <Typography sx={{display:"block", fontWeight:"bold", mr:".5em" }}>Reservations Policy: </Typography>
+                            {winery.rezrequired ? <Typography sx={{display:"block"}}> {winery.rezrequired}</Typography> : "unknown"}
+                </Stack>
                 <br></br>
                 <span>
                     <Box sx={{position:"absolute", bottom:0}}>

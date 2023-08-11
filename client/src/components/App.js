@@ -1,6 +1,8 @@
 
 import { useState, useEffect, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "@mui/material";
+import theme from "../context/theme";
 import Wineries from "../pages/Wineries";
 import TopNav from "./TopNav";
 
@@ -9,7 +11,7 @@ import TopNav from "./TopNav";
 function App() {
 
     const [wineries, setWineries] = useState([])
-    const [cities, setCities] = useState([])
+    const [cities, setCities] = useState(["Napa", "Sonoma", "Santa Barbara", "Other" ])
 
     //Set initial states 
 
@@ -18,20 +20,22 @@ function App() {
         .then(r => r.json())
         .then(data => setWineries(data))
 
-        fetch(`/cities`)
-        .then(r => r.json())
-        .then(data => setCities(data))
+        // fetch(`/cities`)
+        // .then(r => r.json())
+        // .then(data => setCities(data))
       }, []);
 
     return (
         <div>
-            <TopNav />
-            <Routes>
-                <Route path="/" element={<Wineries
-                    wineries={wineries}
-                    cities={cities}
-                />}/>
-            </Routes>
+            <ThemeProvider theme={theme}>          
+                <TopNav />
+                <Routes>
+                    <Route path="/" element={<Wineries
+                        wineries={wineries}
+                        cities={cities}
+                    />}/>
+                </Routes>
+            </ThemeProvider>
         </div>
     )
 

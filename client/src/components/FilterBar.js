@@ -22,7 +22,7 @@ const FilterBar = ({rezFilter, setRezFilter, maxCost, setMaxCost}) => {
                 {rezFilter === true? anyRez : noRez}
                 <Stack spacing={2} direction="row" sx={{ width:"30%", padding:".5em" }} alignItems="center">
                     <Typography sx={{fontSize:"1em"}}> $ </Typography>
-                    <Slider aria-label="Volume" value={maxCost} onChange={handleChange} sx={{ }}></Slider>
+                    <Slider aria-label="Volume" color="primary" value={maxCost} onChange={handleChange} sx={{ }}></Slider>
                     <Typography>${maxCost}</Typography>
                 </Stack>
             </Stack>
