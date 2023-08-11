@@ -4,7 +4,6 @@ class WineriesController < ApplicationController
   # GET /wineries
   def index
     @wineries = Winery.all
-
     render json: @wineries
   end
 
@@ -39,27 +38,41 @@ class WineriesController < ApplicationController
   end
 
   #show uniq list of all cities in db
-  def cities 
-    cities = Winery.all.map {|i| i.city}.uniq.sort
-    render json: cities
-  end
-  #create an array of unique regions 
-    #regions = Winery.all.map {|i| i.region}.uniq.sort 
-  #create an object, for each region push in a hash w/ the region name and a blank array
-    #region_cities = {}
-    #regions.each |region| do
-       #region_cities.merge!(region => [])
-    #end 
-  #iterate through Wineries, add a city if unique 
-    #Wineries.each do |winery| 
-        #
+  # def cities 
+  #   cities = Winery.all.map {|i| i.city}.uniq.sort
+  #   render json: cities
+  # end
 
+  # def regions 
+  #   regions = Winery.all.map{|w| w.region}.uniq.sort 
+  #   render json: regions
+  # end
+
+  def region_cities 
+    regions = Winery.all.map{|w| w.region}.uniq.sort 
+    region_cities = []
+    regions.each do |r| 
+      cities = []
+      Winery.all.each do |w| 
+        if r == w.region && w.city
+          cities << w.city
+        end
+      end
+      region_cities << {"region" => r, "cities" => cities.uniq}
+
+    end
+    render json: region_cities
+  end
 
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_winery
       @winery = Winery.find(params[:id])
+    end
+
+    def set_regions
+     
     end
 
     # Only allow a list of trusted parameters through.
