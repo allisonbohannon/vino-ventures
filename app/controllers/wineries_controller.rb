@@ -43,6 +43,18 @@ class WineriesController < ApplicationController
     cities = Winery.all.map {|i| i.city}.uniq.sort
     render json: cities
   end
+  #create an array of unique regions 
+    #regions = Winery.all.map {|i| i.region}.uniq.sort 
+  #create an object, for each region push in a hash w/ the region name and a blank array
+    #region_cities = {}
+    #regions.each |region| do
+       #region_cities.merge!(region => [])
+    #end 
+  #iterate through Wineries, add a city if unique 
+    #Wineries.each do |winery| 
+        #
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

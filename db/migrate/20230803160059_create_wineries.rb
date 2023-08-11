@@ -9,7 +9,10 @@ class CreateWineries < ActiveRecord::Migration[6.1]
       t.string :address1
       t.string :address2
       t.string :city
-
+      t.string :region
+      t.string :website
+      t.integer :avg_ratings
+      t.integer :total_ratings
       t.timestamps
     end
   end
