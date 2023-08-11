@@ -18,13 +18,13 @@ function WineryCard({winery}) {
                     title="winery photo"
                     />
             </CardMedia>
-            <CardContent sx={{display:"block", position:"relative"}}>
+            <CardContent sx={{display:"block", position:"relative", minWidth:"65%"}}>
                 <Typography variant="h4" sx={{textAlign:"center", color:"#722F37"}}>{winery.name}</Typography>
                 <Typography variant="h6" sx={{textAlign:"center", color:"gray"}}>{winery.city}</Typography>
                 <Divider />
                 <br></br>
                 <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
-                <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>
+                <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>          
                     {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
                 </Box>
                 <Stack direction="row" sx={{mb:".5em"}}>

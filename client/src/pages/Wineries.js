@@ -10,7 +10,7 @@ function Wineries({wineries, cities}) {
     const [cityFilter, setCityFilter] = useState([])
     const [rezFilter, setRezFilter] = useState(true)
     const [maxCost, setMaxCost] = useState(100)
-    const [viewMore, setViewMore] = useState(10)
+    const [viewMore, setViewMore] = useState(40)
 
     const filterWineries = wineries.filter(winery => {
       if (!winery.tastingcost) {
@@ -34,6 +34,10 @@ function Wineries({wineries, cities}) {
         return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
     })
   }
+
+    const handleClick = () => {
+      setViewMore(viewMore => viewMore + 40)
+    }
     
   return (
     <Box sx={{display:"flex", flexDirection:"column", position:"relative", top:"100px"}}>
@@ -42,12 +46,12 @@ function Wineries({wineries, cities}) {
         <FilterBar maxCost={maxCost} setMaxCost={setMaxCost} rezFilter={rezFilter} setRezFilter={setRezFilter}/>
         <Box>
           <Box sx={{ marginLeft:"30%", marginTop:"3%", textAlign:"center"}}>
-            <Typography variant="h5"> {displayWineries().length} Results </Typography>
+            <Typography variant="h5"> Showing {Math.min(displayWineries().length, viewMore)} results of {displayWineries().length} </Typography>
           </Box>
           <Box sx={{ marginLeft:"30%"}}> 
               {displayWineries().slice(0, viewMore)}
           </Box>
-          <Button variant='contained' sx={{width:"10%", marginLeft:"55%" }} >View More</Button>
+          <Button variant='contained' onClick={handleClick} sx={{width:"10%", marginLeft:"55%" }} >View More</Button>
         </Box>
        </Box>
        <br></br>
