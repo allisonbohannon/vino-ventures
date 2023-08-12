@@ -1,24 +1,24 @@
-import { ListItemButton, Typography } from '@mui/material';
-import React, { useState } from 'react'
+import { Box, Checkbox, FormControl, FormControlLabel, FormGroup, Typography } from '@mui/material'
+import React, {useState} from 'react'
 
 const CitySearchItem = ({city, cityFilter, setCityFilter}) => {
 
-    const [included, setIncluded] = useState(false)
+    const [checked, setChecked] = useState(true)
 
-    const handleClick = () => {
-        setIncluded(!included)
-        if (included === false) {
-            setCityFilter([...cityFilter, city])
+    const handleClick = (e) => {
+        if (checked === false) {
+            setCityFilter([...cityFilter, e.target.value])
         }
         else {
-            setCityFilter(cityFilter => cityFilter.filter(index => index != city))
+            setCityFilter(cityFilter => cityFilter.filter(index => index != e.target.value))
         }
-      };
+        setChecked(!checked)
+    }
 
   return (
-    <ListItemButton onClick={handleClick}>   
-        {included ? <Typography variant="h5" sx={{fontWeight:"bold"}}>{city}</Typography> : <Typography variant="h5" >{city}</Typography> }
-    </ListItemButton>
+        <FormGroup  sx={{marginLeft:"1em"}}>
+            <FormControlLabel control={<Checkbox onClick={handleClick} checked={checked} />} label={city} value={city} />
+        </FormGroup>
   )
 }
 

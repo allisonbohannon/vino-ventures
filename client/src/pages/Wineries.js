@@ -5,12 +5,13 @@ import FilterBar from '../components/FilterBar';
 import {Box, Button, Typography} from '@mui/material'
 
 
-function Wineries({wineries, cities}) {
+function Wineries({wineries, regionCities}) {
 
     const [cityFilter, setCityFilter] = useState([])
     const [rezFilter, setRezFilter] = useState(true)
     const [maxCost, setMaxCost] = useState(100)
     const [viewMore, setViewMore] = useState(40)
+
 
     const filterWineries = wineries.filter(winery => {
       if (!winery.tastingcost) {
@@ -42,7 +43,7 @@ function Wineries({wineries, cities}) {
   return (
     <Box sx={{display:"flex", flexDirection:"column", position:"relative", top:"100px"}}>
        <Box sx={{display:'flex', justifyContent:"space-between"}}>
-        <Sidebar  cities={cities} cityFilter={cityFilter} setCityFilter={setCityFilter} /> 
+        <Sidebar  regionCities={regionCities} cityFilter={cityFilter} setCityFilter={setCityFilter} /> 
         <FilterBar maxCost={maxCost} setMaxCost={setMaxCost} rezFilter={rezFilter} setRezFilter={setRezFilter}/>
         <Box>
           <Box sx={{ marginLeft:"30%", marginTop:"3%", textAlign:"center"}}>
@@ -51,7 +52,7 @@ function Wineries({wineries, cities}) {
           <Box sx={{ marginLeft:"30%"}}> 
               {displayWineries().slice(0, viewMore)}
           </Box>
-          <Button variant='contained' onClick={handleClick} sx={{width:"10%", marginLeft:"55%" }} >View More</Button>
+          {displayWineries().length > viewMore ?  <Button variant='contained' onClick={handleClick} sx={{width:"10%", marginLeft:"55%" }} >View More</Button> : ""}
         </Box>
        </Box>
        <br></br>
