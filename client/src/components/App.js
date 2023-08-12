@@ -11,7 +11,7 @@ import TopNav from "./TopNav";
 function App() {
 
     const [wineries, setWineries] = useState([])
-    const [cities, setCities] = useState(["Napa", "Sonoma", "Santa Barbara", "Other" ])
+    const [regionCities, setRegionCities] = useState([])
 
     //Set initial states 
 
@@ -20,9 +20,10 @@ function App() {
         .then(r => r.json())
         .then(data => setWineries(data))
 
-        // fetch(`/cities`)
-        // .then(r => r.json())
-        // .then(data => setCities(data))
+        fetch(`/region_cities`)
+        .then(r => r.json())
+        .then(data => setRegionCities(data))
+        
       }, []);
 
     return (
@@ -32,7 +33,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Wineries
                         wineries={wineries}
-                        cities={cities}
+                        regionCities={regionCities}
                     />}/>
                 </Routes>
             </ThemeProvider>

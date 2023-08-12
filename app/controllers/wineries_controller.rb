@@ -51,6 +51,7 @@ class WineriesController < ApplicationController
   def region_cities 
     regions = Winery.all.map{|w| w.region}.uniq.sort 
     region_cities = []
+    i = 1
     regions.each do |r| 
       cities = []
       Winery.all.each do |w| 
@@ -58,8 +59,8 @@ class WineriesController < ApplicationController
           cities << w.city
         end
       end
-      region_cities << {"region" => r, "cities" => cities.uniq}
-
+      region_cities << {"id" => i, "region" => r, "cities" => cities.uniq}
+      i += 1
     end
     render json: region_cities
   end
