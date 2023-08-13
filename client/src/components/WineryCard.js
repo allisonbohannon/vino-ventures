@@ -38,7 +38,7 @@ function WineryCard({winery}) {
                         <Rating  value={winery.avg_rating} disabled/>
                         { winery.total_ratings? <Typography>({winery.total_ratings})</Typography> : ""}
                     </Box>
-                    <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
+                    <Typography sx={{fontStyle:"italic", maxHeight:"30%", overflow:"auto"}}>{winery.about}</Typography>
                     <Box sx={{display:"block", textAlign:"center", padding:".2em"}}>          
                         {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
                     </Box>
