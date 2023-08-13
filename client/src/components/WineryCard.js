@@ -1,16 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper, Stack, Rating, BottomNavigation, BottomNavigationAction } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper, Stack, Rating, BottomNavigation, BottomNavigationAction, Tooltip } from '@mui/material'
 import LaunchIcon from '@mui/icons-material/Launch';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import StarIcon from '@mui/icons-material/Star';
 import RateReviewIcon from '@mui/icons-material/RateReview';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function WineryCard({winery}) {
 
   const navigate = useNavigate(); 
   const handleClick = () => {navigate(`/`)}
+
+  const [isFavorite, setIsFavorite] = useState(false)
+
+  const handleFavorite = (e) => {
+    console.log(e)
+    setIsFavorite(!isFavorite)
+  }
 
   return (
     <Paper elevation={1} sx={{ margin:"1em", width:"90%"}}>
@@ -30,30 +38,33 @@ function WineryCard({winery}) {
                         <Rating  value={winery.avg_rating} disabled/>
                         { winery.total_ratings? <Typography>({winery.total_ratings})</Typography> : ""}
                     </Box>
-                    <br></br>
                     <Typography sx={{fontStyle:"italic"}}>{winery.about}</Typography>
-                    <Box sx={{display:"block", textAlign:"center", padding:"1em"}}>          
-                        {winery.tastingcost? <Typography >  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
+                    <Box sx={{display:"block", textAlign:"center", padding:".2em"}}>          
+                        {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
                     </Box>
-                    <Stack direction="row" sx={{mb:".5em"}}>
-                                <Typography sx={{display:"block", fontWeight:"bold", mr:".5em" }}>Reservations Policy: </Typography>
-                                {winery.rezrequired ? <Typography sx={{display:"block"}}> {winery.rezrequired}</Typography> : "unknown"}
-                    </Stack>
-                    <Box sx={{}}>
-                        <Typography>{winery.address1}</Typography>
-                        <Typography>{winery.address2}</Typography>
-                    </Box>  
+                    <Box sx={{mb:"1em"}}>
+                        <Stack direction="row" >
+                            <Typography sx={{display:"block", fontWeight:"bold", mr:".5em" }}>Reservations Policy: </Typography>
+                            {winery.rezrequired ? <Typography sx={{display:"block"}}> {winery.rezrequired}</Typography> : <Typography color="gray" sx={{fontStyle:"italic"}} >unknown</Typography>}
+                        </Stack>
+                    </Box>
                     <br></br>
-                    <BottomNavigation sx={{ bottom:0, justifyContent:"space-around", height:"3em"}}>
-                        {winery.website? <BottomNavigationAction label="View Website" icon={<LaunchIcon />}/> : "" }
-                        <BottomNavigationAction label="Rate" icon={<StarIcon />}/> 
-                        <BottomNavigationAction label="Review" icon={<RateReviewIcon />}/>
-                        <BottomNavigationAction label="See Location" icon={<LocationOnIcon />}/>
-                        <BottomNavigationAction label="Favorite" icon={<FavoriteIcon />}/>
-                    </BottomNavigation>
+                    <Box sx={{display:'flex', position:"absolute", bottom:0, width:"100%", justifyContent:"space-between"}}>
+                        <Box sx={{width:"50%"}}>   
+                            <Typography>{winery.address1}</Typography>
+                            <Typography>{winery.address2}</Typography>
+                        </Box>
+                        <Box sx={{width:"30%", margin:"1em"}}>
+                            {winery.website? <Tooltip title="View Website"><IconButton><LaunchIcon /> </IconButton></Tooltip>: "" }
+                            <Tooltip title="Rate or Review"><IconButton><RateReviewIcon /></IconButton></Tooltip>
+                            <Tooltip title="View Map"><IconButton><LocationOnIcon /></IconButton> </Tooltip>
+                            <Tooltip title="Favorite" ><IconButton onClick={handleFavorite} >{isFavorite === true? <FavoriteIcon /> : <FavoriteBorderIcon  />}</IconButton></Tooltip>
+                        </Box>
+                    </Box>  
+                    
             </CardContent>
             
-        </Card>
+        </Card> 
         
     </Paper>
 

@@ -16,7 +16,11 @@ const theme = createTheme({
         info: {
           main: "#7C3333",
         }
-      }
+      },
+      typography: {
+        fontSize: 12, 
+      },
+      spacing: 1, 
 })
 
 export default theme
