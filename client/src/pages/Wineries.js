@@ -21,16 +21,11 @@ function Wineries({wineries, regionCities, searchTerm}) {
       }
     })
 
-    const regionalWineries = filterWineries.filter(winery => cityFilter.includes(winery.city))
-
-    console.log(rezFilter)
   
     const displayWineries = () => {
-      let array;
-      if (cityFilter.length === 0) {
-        array = filterWineries;
-      } else {
-        array = regionalWineries;
+      let array = filterWineries
+      if (cityFilter.length > 0) {
+        array = wineries.filter(winery => cityFilter.includes(winery.city))
       }; 
       if (searchTerm) { 
         array = array.filter(winery => winery.name.toLowerCase().includes(searchTerm))
