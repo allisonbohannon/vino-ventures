@@ -30,7 +30,7 @@ function Wineries({wineries, regionCities, searchTerm}) {
       if (searchTerm) { 
         array = array.filter(winery => winery.name.toLowerCase().includes(searchTerm))
       }; 
-      if (rezFilter == true) {
+      if (rezFilter === true) {
         array = array.filter(winery => winery.rezrequired !== "Reservations Required")
       }
       return array.map(winery=> {
@@ -43,12 +43,12 @@ function Wineries({wineries, regionCities, searchTerm}) {
     }
     
   return (
-    <Box sx={{display:"flex", flexDirection:"column", position:"relative", top:"100px"}}>
+    <Box sx={{display:"flex", flexDirection:"column", position:"relative", top:"100px", width:"100%"}}>
        <Box sx={{display:'flex', justifyContent:"space-between"}}>
         <Sidebar  regionCities={regionCities} cityFilter={cityFilter} setCityFilter={setCityFilter} /> 
         <FilterBar maxCost={maxCost} setMaxCost={setMaxCost} rezFilter={rezFilter} setRezFilter={setRezFilter}/>
         <Box>
-          <Box sx={{ marginLeft:"30%", marginTop:"3%", textAlign:"center"}}>
+          <Box sx={{width:'100%',  marginTop:"3%", textAlign:"center" }}>
             <Typography variant="h6" sx={{color:"gray"}}> Showing {Math.min(displayWineries().length, viewMore)} results of {displayWineries().length} </Typography>
           </Box>
           <Box sx={{ marginLeft:"30%"}}> 
