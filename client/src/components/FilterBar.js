@@ -17,7 +17,7 @@ const FilterBar = ({rezFilter, setRezFilter, maxCost, setMaxCost}) => {
             <Stack spacing={4} direction="row" sx={{justifyContent:"space-around" }} alignItems="center">
                 <Stack spacing={2} direction="row" alignItems="center" sx={{width:"30%"}}>
                   <Switch onClick={handleRez}></Switch>
-                  <Typography>{rezFilter === true ? "Any Reservations" : "Reservations Not Required"}</Typography>
+                  <Typography>{rezFilter === false ? "Any Reservations" : "Reservations Not Required"}</Typography>
                 </Stack>
                 <Stack spacing={2} direction="row" sx={{ width:"30%", padding:".5em" }} alignItems="center">
                     <Typography sx={{fontSize:"1em"}}> $ </Typography>

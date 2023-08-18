@@ -8,7 +8,7 @@ import {Box, Button, Typography} from '@mui/material'
 function Wineries({wineries, regionCities, searchTerm}) {
 
     const [cityFilter, setCityFilter] = useState([])
-    const [rezFilter, setRezFilter] = useState(true)
+    const [rezFilter, setRezFilter] = useState(false)
     const [maxCost, setMaxCost] = useState(100)
     const [viewMore, setViewMore] = useState(40)
 
@@ -22,6 +22,8 @@ function Wineries({wineries, regionCities, searchTerm}) {
     })
 
     const regionalWineries = filterWineries.filter(winery => cityFilter.includes(winery.city))
+
+    console.log(rezFilter)
   
     const displayWineries = () => {
       let array;
@@ -33,6 +35,9 @@ function Wineries({wineries, regionCities, searchTerm}) {
       if (searchTerm) { 
         array = array.filter(winery => winery.name.toLowerCase().includes(searchTerm))
       }; 
+      if (rezFilter == true) {
+        array = array.filter(winery => winery.rezrequired !== "Reservations Required")
+      }
       return array.map(winery=> {
         return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
     })
