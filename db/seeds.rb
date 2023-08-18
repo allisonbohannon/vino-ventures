@@ -168,8 +168,6 @@ winery_data = [
         "region": "Lake Country",
         "about": "Centered in the heart of Lake County's small agricultural community, is the Smiling Dogs Ranch. Our Zinfandel & Barbera grapes are grown using ecologically friendly & sustainable farming methods.",
         "tastingcost": 17,
-        "imagesrc": "https://winecountry-media.s3.amazonaws.com/22611-media-SmilingDogsRanch.jpg.300x300.jpg",
-        "website": "https://www.winecountry.com/businesses/43035/smiling-dogs-ranch"
     },
     {
         "name": "Stonehouse Cellars",
@@ -352,7 +350,6 @@ winery_data = [
         "address2": "Lodi CA 95240",
         "city": "Lodi",
         "region": "Lodi",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9761/omega-cellars"
     },
     {
@@ -361,7 +358,6 @@ winery_data = [
         "address2": "Lodi CA 95240",
         "city": "Lodi",
         "region": "Lodi",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/15743/riaza-wines"
     },
     {
@@ -461,7 +457,6 @@ winery_data = [
         "address2": "San Martin CA 95046",
         "city": "San Martin",
         "region": "Santa Cruz County",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/3205/clos-lachance-winery"
     },
     {
@@ -488,7 +483,6 @@ winery_data = [
         "address2": "Los Gatos CA 95033",
         "city": "Los Gatos",
         "region": "Santa Cruz County",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/3898/david-bruce-winery"
     },
     {
@@ -515,7 +509,6 @@ winery_data = [
         "address2": "Los Gatos CA 95032",
         "city": "Los Gatos",
         "region": "Santa Cruz County",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7408/la-rusticana-d-orsa-vineyards"
     },
     {
@@ -551,7 +544,6 @@ winery_data = [
         "address2": "Los Altos Hills CA 94022",
         "city": "Los Altos Hills",
         "region": "Santa Cruz County",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9954/page-mill-winery"
     },
     {
@@ -661,7 +653,6 @@ winery_data = [
         "address2": "Corralitos CA 95076",
         "city": "Corralitos",
         "region": "Santa Cruz County",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14772/windy-oaks-estate"
     },
     {
@@ -1011,7 +1002,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14422/vista-del-rey-vineyards"
     },
     {
@@ -1020,7 +1010,6 @@ winery_data = [
         "address2": "Arroyo Grande CA 93420",
         "city": "Arroyo Grande",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14516/wedell-cellars"
     },
     {
@@ -1029,7 +1018,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14649/wild-coyote-estate-winery"
     },
     {
@@ -1038,7 +1026,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14769/windward-vineyard"
     },
     {
@@ -1047,7 +1034,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14996/zenaida-cellars"
     },
     {
@@ -1056,7 +1042,6 @@ winery_data = [
         "address2": "Arroyo Grande CA 93420",
         "city": "Arroyo Grande",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7290/kynsi-winery"
     },
     {
@@ -1084,7 +1069,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13115/le-vigne-winery"
     },
     {
@@ -1113,7 +1097,6 @@ winery_data = [
         "address2": "Paso Robles CA 93447",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8525/meridian-vineyards"
     },
     {
@@ -1122,7 +1105,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8631/midnight-cellars"
     },
     {
@@ -1131,7 +1113,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8719/mitchella-vineyard-winery"
     },
     {
@@ -1140,7 +1121,6 @@ winery_data = [
         "address2": "Atascadero CA 93401",
         "city": "Atascadero",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9424/nichols-winery-cellars"
     },
     {
@@ -1149,7 +1129,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9789/opolo-vineyards"
     },
     {
@@ -1158,7 +1137,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10191/peachy-canyon-winery"
     },
     {
@@ -1167,7 +1145,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/272/pelletiere-estate-vineyard-winery"
     },
     {
@@ -1176,7 +1153,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10259/penman-springs-vineyard"
     },
     {
@@ -1184,7 +1160,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10336/pharaohmoans-wine"
     },
     {
@@ -1193,7 +1168,6 @@ winery_data = [
         "address2": "San Luis Obispo CA 93401",
         "city": "San Luis Obispo",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10408/piedra-creek-winery"
     },
     {
@@ -1202,7 +1176,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10751/rabbit-ridge-winery-vineyards"
     },
     {
@@ -1211,7 +1184,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11136/rio-seco-vineyard-winery"
     },
     {
@@ -1220,7 +1192,6 @@ winery_data = [
         "address2": "San Miguel CA 93451",
         "city": "San Miguel",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11203/riverstar-vineyards"
     },
     {
@@ -1241,7 +1212,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11391/rotta-winery"
     },
     {
@@ -1250,7 +1220,6 @@ winery_data = [
         "address2": "Pismo Beach CA 93448",
         "city": "Pismo Beach",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11635/san-luis-obispo-wine-country-association"
     },
     {
@@ -1269,7 +1238,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11922/sculpterra-winery-scupture-garden"
     },
     {
@@ -1287,7 +1255,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12213/silver-horse-winery"
     },
     {
@@ -1306,7 +1273,6 @@ winery_data = [
         "address2": "San Luis Obispo CA 93401",
         "city": "San Luis Obispo",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12793/stephen-ross-wine-cellars"
     },
     {
@@ -1315,7 +1281,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12819/still-waters-vineyards"
     },
     {
@@ -1324,7 +1289,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12936/summerwood-winery-inn"
     },
     {
@@ -1333,7 +1297,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13129/tablas-creek-vineyard"
     },
     {
@@ -1361,7 +1324,6 @@ winery_data = [
         "address2": "San Luis Obispo CA 93401",
         "city": "San Luis Obispo",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13805/tolosa-winery"
     },
     {
@@ -1370,7 +1332,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13925/treana-winery"
     },
     {
@@ -1379,7 +1340,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14010/turley-wine-cellars"
     },
     {
@@ -1388,7 +1348,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14237/victor-hugo-vineyards-and-winery"
     },
     {
@@ -1397,7 +1356,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14314/villicana-winery"
     },
     {
@@ -1406,7 +1364,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14319/vina-robles-winery"
     },
     {
@@ -1470,7 +1427,6 @@ winery_data = [
         "address2": "Avila Beach CA 93424",
         "city": "Avila Beach",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/297/alapay-cellars"
     },
     {
@@ -1490,7 +1446,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/546/anglim-winery"
     },
     {
@@ -1499,7 +1454,6 @@ winery_data = [
         "address2": "Avila Beach CA 93424",
         "city": "Avila Beach",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/860/avila-wine-roasting-co"
     },
     {
@@ -1517,7 +1471,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5753/barton-family-wines"
     },
     {
@@ -1526,7 +1479,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/1448/bianchi-winery-and-tasting-room"
     },
     {
@@ -1535,7 +1487,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2245/calcareous-vineyard"
     },
     {
@@ -1544,7 +1495,6 @@ winery_data = [
         "address2": "Paso Robles CA 93466",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2421/caparone-winery"
     },
     {
@@ -1553,7 +1503,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2571/carmody-mcknight-estate-wines"
     },
     {
@@ -1562,7 +1511,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2685/castoro-cellars"
     },
     {
@@ -1571,7 +1519,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2853/changala-winery"
     },
     {
@@ -1580,7 +1527,6 @@ winery_data = [
         "address2": "San Luis Obispo CA 93401",
         "city": "San Luis Obispo",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/3137/claiborne-churchill-vintners"
     },
     {
@@ -1610,7 +1556,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/3886/dark-star-cellars"
     },
     {
@@ -1619,7 +1564,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/4048/derby-wine-estates"
     },
     {
@@ -1628,7 +1572,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/4117/doce-robles-winery"
     },
     {
@@ -1637,7 +1580,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8281/donati-family-vineyard"
     },
     {
@@ -1646,7 +1588,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/4195/dover-canyon-winery"
     },
     {
@@ -1655,7 +1596,6 @@ winery_data = [
         "address2": "Paso Robles CA 93447",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/4326/eberle-winery"
     },
     {
@@ -1664,7 +1604,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10125/eos-estate-winery"
     },
     {
@@ -1673,7 +1612,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14952/epoch-wines"
     },
     {
@@ -1682,7 +1620,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5208/fratelli-perata-winery"
     },
     {
@@ -1691,7 +1628,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5420/gelfand-vineyards"
     },
     {
@@ -1710,7 +1646,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5866/halter-ranch-vineyard"
     },
     {
@@ -1729,7 +1664,6 @@ winery_data = [
         "address2": "Templeton CA 93465",
         "city": "Templeton",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5911/hansen-vineyards-winery"
     },
     {
@@ -1738,7 +1672,6 @@ winery_data = [
         "address2": "Harmony CA 93435",
         "city": "Harmony",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5947/harmony-cellars"
     },
     {
@@ -1757,7 +1690,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/6486/hug-cellars"
     },
     {
@@ -1766,7 +1698,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/6500/hunt-cellars"
     },
     {
@@ -1775,7 +1706,6 @@ winery_data = [
         "address2": "Paso Robles CA 93446",
         "city": "Paso Robles",
         "region": "San Luis Obispo",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10124/j-lohr-vineyards-wines"
     },
     {
@@ -1832,7 +1762,6 @@ winery_data = [
         "address2": "Santa Maria CA 93454",
         "city": "Santa Maria",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7129/kenneth-volk-vineyards"
     },
     {
@@ -1841,7 +1770,6 @@ winery_data = [
         "address2": "Los Olivos CA 93441",
         "city": "Los Olivos",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7245/koehler-winery"
     },
     {
@@ -1860,7 +1788,6 @@ winery_data = [
         "address2": "Buellton CA 93427",
         "city": "Buellton",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7439/lafond-winery-vineyard"
     },
     {
@@ -1870,7 +1797,6 @@ winery_data = [
         "city": "Los Olivos",
         "region": "Santa Barbara ",
         "about": "A boutique, family-run winery in Santa Barbara, California dedicated to quality, passion, and tradition.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21281/larner-vineyard-winery"
     },
     {
@@ -1879,7 +1805,6 @@ winery_data = [
         "address2": "Solvang CA 93463",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7721/lincourt-vineyards"
     },
     {
@@ -1888,7 +1813,6 @@ winery_data = [
         "address2": "Solvang CA 93463",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7744/lions-peak-vineyards"
     },
     {
@@ -1897,7 +1821,6 @@ winery_data = [
         "address2": "Solvang CA 93463",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7932/lucas-lewellen-vineyards"
     },
     {
@@ -1906,7 +1829,6 @@ winery_data = [
         "address2": "Lompoc CA 93436",
         "city": "Lompoc",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8444/melville-vineyards-and-winery"
     },
     {
@@ -1915,7 +1837,6 @@ winery_data = [
         "address2": "Buellton CA 93427",
         "city": "Buellton",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8974/mosby-winery"
     },
     {
@@ -1924,7 +1845,6 @@ winery_data = [
         "address2": "Lompoc CA 93436",
         "city": "Lompoc",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9993/palmina-wines"
     },
     {
@@ -1942,7 +1862,6 @@ winery_data = [
         "address2": "Los Olivos CA 93441",
         "city": "Los Olivos",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11100/richard-longoria-wines"
     },
     {
@@ -1951,7 +1870,6 @@ winery_data = [
         "address2": "Solvang CA 93463",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11116/rideau-vineyards"
     },
     {
@@ -1970,7 +1888,6 @@ winery_data = [
         "address2": "Solvang CA 93463",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11450/rusack-vineyards"
     },
     {
@@ -1989,7 +1906,6 @@ winery_data = [
         "city": "Lompoc",
         "region": "Santa Barbara ",
         "about": "We invite you to take a step back in time and experience the place where the Sta. Rita Hills growing region was born.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11699/sanford-winery-vineyards"
     },
     {
@@ -1999,7 +1915,6 @@ winery_data = [
         "city": "Santa Barbara",
         "region": "Santa Barbara ",
         "about": "Located in the historic La Arcada Courtyard, our tasting room offers a variety of experiences, including sparkling wines, chocolate pairings & artisan cheese plates!",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/42640/sanford-winery-tasting-room"
     },
     {
@@ -2009,7 +1924,6 @@ winery_data = [
         "city": "Santa Barbara",
         "region": "Santa Barbara ",
         "about": "This intimate operation, where wines are bottled by hand and bottles are hand-labeled, has a personal touch to its tasting room, so you feel as if you are wine tasting among friends. A fun and funky experience!",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/18601/sanguis-winery"
     },
     {
@@ -2018,7 +1932,6 @@ winery_data = [
         "address2": "Santa Barbara CA 93101",
         "city": "Santa Barbara",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11767/santa-barbara-winery"
     },
     {
@@ -2029,7 +1942,6 @@ winery_data = [
         "region": "Santa Barbara ",
         "about": "GOOD WINE STARTS WITH GOOD DIRT AND IN 2012 ANNA AND DAVID DELASKI FINALLY GOT THEIR SHOT AT FARMING AND PRODUCING CALIFORNIA WINE.",
         "tastingcost": 15,
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21252/solminer"
     },
     {
@@ -2038,7 +1950,6 @@ winery_data = [
         "address2": "Solvang CA 93464",
         "city": "Solvang",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12829/stolpman-vineyards"
     },
     {
@@ -2048,7 +1959,6 @@ winery_data = [
         "city": "Los Olivos",
         "region": "Santa Barbara ",
         "about": "100% Estate Grown wines crafted on the limestone hills of Ballard Canyon, Santa Barbara County.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21295/stolpman-vineyards"
     },
     {
@@ -2058,7 +1968,6 @@ winery_data = [
         "city": "Los Olivos",
         "region": "Santa Barbara ",
         "about": "Our tiny wine operation is aimed at producing high quality and balanced wines. Share wine with us by the glass, by the tasting, by the bottle (or two or three) and enjoy the grassy patio space as long as you like.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21274/story-of-soil"
     },
     {
@@ -2067,7 +1976,6 @@ winery_data = [
         "address2": "Summerland CA 93067",
         "city": "Summerland",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12933/summerland-winery"
     },
     {
@@ -2086,7 +1994,6 @@ winery_data = [
         "address2": "Santa Maria CA 93454",
         "city": "Santa Maria",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13944/tres-hermanas-winery"
     },
     {
@@ -2095,7 +2002,6 @@ winery_data = [
         "address2": "Santa Barbara CA 93103",
         "city": "Santa Barbara",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14613/whitcraft-winery"
     },
     {
@@ -2104,7 +2010,6 @@ winery_data = [
         "address2": "Los Olivos CA 93441",
         "city": "Los Olivos",
         "region": "Santa Barbara ",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14980/zaca-mesa-winery"
     },
     {
@@ -2224,7 +2129,6 @@ winery_data = [
         "city": "Los Olivos",
         "region": "Santa Barbara ",
         "about": "Blair Fox Cellars is an ultra-boutique winery dedicated to producing small lot, handcrafted bottlings of exceptional quality Rhone varietal wines from the most premium vineyards in Santa Barbara County.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/18528/blair-fox-cellars"
     },
     {
@@ -2263,7 +2167,6 @@ winery_data = [
         "about": "The Bubble Shack features Fesstivity & Siblling Bubblery sparkling wines, a collaborative effort for Parker siblings Eli Parker and Ashley Parker Snider.",
         "tastingcost": 15,
         "rezrequired": "Walk-ins Welcome",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21275/bubble-shack"
     },
     {
@@ -2367,7 +2270,6 @@ winery_data = [
         "city": "Los Olivos",
         "region": "Santa Barbara ",
         "about": "The tasting Room is located in the picturesque small town of Los Olivos and offers regular and reserve tastings for a small fee. You will have the opportunity to purchase exclusive, small lot wines not found anywhere else.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13146/dragonette-cellars"
     },
     {
@@ -2766,7 +2668,6 @@ winery_data = [
         "address2": "Elk CA 95432",
         "city": "Elk",
         "region": "Mendocino",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10353/phillips-hill-winery"
     },
     {
@@ -2775,7 +2676,6 @@ winery_data = [
         "address2": "Ukiah CA 95482",
         "city": "Ukiah",
         "region": "Mendocino",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11208/rivino-winery"
     },
     {
@@ -2822,7 +2722,6 @@ winery_data = [
         "address2": "Hopland CA 95449",
         "city": "Hopland",
         "region": "Mendocino",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12279/sip-mendocino"
     },
     {
@@ -2831,7 +2730,6 @@ winery_data = [
         "address2": "Hopland CA 95449",
         "city": "Hopland",
         "region": "Mendocino",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13286/terra-savia-winery"
     },
     {
@@ -2840,7 +2738,6 @@ winery_data = [
         "address2": "Calpella CA 95418",
         "city": "Calpella",
         "region": "Mendocino",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13302/testa-vineyards"
     },
     {
@@ -2890,7 +2787,6 @@ winery_data = [
         "address2": "St. Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13963/trinity-oaks"
     },
     {
@@ -2899,7 +2795,6 @@ winery_data = [
         "address2": "Calistoga CA 94515",
         "city": "Calistoga",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13971/tristant-vineyards"
     },
     {
@@ -2908,7 +2803,6 @@ winery_data = [
         "address2": "Napa CA 94559",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13982/truchard-vineyards"
     },
     {
@@ -2917,7 +2811,6 @@ winery_data = [
         "address2": "St Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14003/tuck-beckstoffer-wines"
     },
     {
@@ -2926,7 +2819,6 @@ winery_data = [
         "address2": "St. Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14005/tudal-winery"
     },
     {
@@ -2935,7 +2827,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14007/tulocay-winery"
     },
     {
@@ -2945,7 +2836,6 @@ winery_data = [
         "city": "Oakville",
         "region": "Napa Valley",
         "about": "On the path to Oakville, you’ll find a hidden gem that’s been here since the beginning. A welcoming home in the Napa Valley, where you will taste our honest and true wines at their source.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14014/turnbull-wine-cellars"
     },
     {
@@ -2973,7 +2863,6 @@ winery_data = [
         "address2": "Calistoga CA 94515",
         "city": "Calistoga",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14185/venge-vineyards"
     },
     {
@@ -2982,7 +2871,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14202/verismo-wines"
     },
     {
@@ -2991,7 +2879,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14604/whetstone-wine-cellars"
     },
     {
@@ -3000,7 +2887,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14628/white-rock-vineyards"
     },
     {
@@ -3040,7 +2926,6 @@ winery_data = [
         "address2": "Saint Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/17746/william-harrison-vineyards-winery"
     },
     {
@@ -3091,7 +2976,6 @@ winery_data = [
         "region": "Napa Valley",
         "about": "Centered in the heart of Lake County's small agricultural community, is the Smiling Dogs Ranch. Our Zinfandel & Barbera grapes are grown using ecologically friendly & sustainable farming methods.",
         "tastingcost": 17,
-        "imagesrc": "https://winecountry-media.s3.amazonaws.com/22611-media-SmilingDogsRanch.jpg.300x300.jpg",
         "website": "https://www.winecountry.com/businesses/43035/smiling-dogs-ranch"
     },
     {
@@ -3244,7 +3128,6 @@ winery_data = [
         "address2": "Napa CA 94559",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12839/stonehedge-winery"
     },
     {
@@ -3285,7 +3168,6 @@ winery_data = [
         "city": "Calistoga",
         "region": "Napa Valley",
         "about": "An inviting winery/tasting room, entertainment center and 22+ acres of magnificent vines - a perfect balance of pleasure and productivity.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12934/summers-estate-wines"
     },
     {
@@ -3294,7 +3176,6 @@ winery_data = [
         "address2": "Angwin CA 94508",
         "city": "Angwin",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/12938/summit-lake-vineyards"
     },
     {
@@ -3342,7 +3223,6 @@ winery_data = [
         "city": "Calistoga",
         "region": "Napa Valley",
         "about": "The winery and tasting room are the dream of two longtime friends — who, after decades of collective experience in farming and creating world-class wine, decided to celebrate the heart and soul of vintage California culture and creativity.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13171/tank-garage-winery"
     },
     {
@@ -3351,7 +3231,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13231/taylor-family-vineyards"
     },
     {
@@ -3360,7 +3239,6 @@ winery_data = [
         "address2": "Rutherford CA 94573",
         "city": "Rutherford",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13233/tayson-pierce-estate-wines"
     },
     {
@@ -3369,7 +3247,6 @@ winery_data = [
         "address2": "Calistoga CA 94515",
         "city": "Calistoga",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13241/tedeschi-family-winery"
     },
     {
@@ -3378,7 +3255,6 @@ winery_data = [
         "address2": "St. Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13287/terra-valentine"
     },
     {
@@ -3387,7 +3263,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/13305/tetra-wines"
     },
     {
@@ -3397,7 +3272,6 @@ winery_data = [
         "city": "St. Helena",
         "region": "Napa Valley",
         "about": "The Prisoner Wine Company takes an unconventional approach to winemaking by working with impassioned growers to source varietals from vineyards and appellations across California.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7637/the-prisoner-wine-company"
     },
     {
@@ -3455,7 +3329,6 @@ winery_data = [
         "address2": "Napa CA 94599",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11015/renteria-wines"
     },
     {
@@ -3638,7 +3511,6 @@ winery_data = [
         "address2": "St. Helena CA 94574",
         "city": "St. Helena",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/11492/rutherford-wine-company"
     },
     {
@@ -3792,12 +3664,15 @@ winery_data = [
     },
     {
         "name": "Silver Oak Cellars",
-        "address1": "7300 Hwy 128",
-        "address2": "Healdsburg CA 95448",
-        "city": "Healdsburg",
+        "address1": "915 Oakville Cross Rd",
+        "address2": "Oakville CA94562",
+        "city": "Oakville",
         "region": "Napa Valley",
+        "about": "Designed with a timeless Napa Valley identity, our Oakville winery is located between Highway 29 and Silverado Trail on the original site where Silver Oak was founded in 1972. Step inside and visitors discover our glasshouse library displaying library vintages dating back to the 1970s, American oak barrel chai and history gallery. The winery is wrapped in hand-quarried limestone with a chipped face reclaimed from an 1800s flour mill in Coffeyville, Kansas.",
+        "tastingcost": 50,
+        "rezrequired": "Reservations Required",
         "imagesrc": "https://winecountry-media.s3.amazonaws.com/14030-media-300.jpg.300x300.jpg",
-        "website": "https://www.winecountry.com/businesses/12222/silver-oak-cellars"
+        "website": "https://silveroak.com/visit/napa-valley/"
     },
     {
         "name": "Silver Trident Winery",
@@ -3834,7 +3709,6 @@ winery_data = [
         "address2": "Calistoga CA 94515",
         "city": "Calistoga",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9985/palisades-winery"
     },
     {
@@ -4097,7 +3971,6 @@ winery_data = [
         "address2": "Napa CA 94581",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/10730/quid-pro-quo"
     },
     {
@@ -4671,7 +4544,6 @@ winery_data = [
         "address2": "Angwin CA 94508",
         "city": "Angwin",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/7485/lamborn-family-vineyards"
     },
     {
@@ -5120,7 +4992,6 @@ winery_data = [
         "address2": "Napa CA 94558",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/6515/husic-vineyards"
     },
     {
@@ -5342,7 +5213,6 @@ winery_data = [
         "city": "Yountville",
         "region": "Napa Valley",
         "about": "Try the wines from this small production winery while you dine at the family’s restaurant, Brix, and view the 10-acre vineyard located behind the restaurant.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/17901/kelleher-family-vineyards"
     },
     {
@@ -5534,7 +5404,6 @@ winery_data = [
         "city": "Napa",
         "region": "Napa Valley",
         "about": "Gamling & McDuck is an edgy brand that lines the walls of its downtown Napa tasting room with comic strips and puts McClary's cat drawings on bottles of rose.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/43409/gamling-mcduck"
     },
     {
@@ -5831,7 +5700,6 @@ winery_data = [
         "city": "St. Helena",
         "region": "Napa Valley",
         "about": "From carefully selected vineyards, produced in very small quantities and artfully crafted to reflect a sense of place, Dakota Shy wines are a testament to Napa Valley's reputation for producing the greatest Cabernet Sauvignon-based wines in the world.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21278/dakota-shy"
     },
     {
@@ -5880,7 +5748,6 @@ winery_data = [
         "city": "St. Helena",
         "region": "Napa Valley",
         "about": "Taste and learn about Davies Vineyard wines during your visit to the Napa Valley. They offer educational tastings of still and sparkling wines by appointment only.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/6754/davies-vineyards"
     },
     {
@@ -5957,7 +5824,6 @@ winery_data = [
         "city": "Napa",
         "region": "Napa Valley",
         "about": "Dos Lagos Vineyards sits on some of the most sought after soils in all of Cabernet-land, and the grapes are so special that we are able to offer 100% Cabernet Sauvignon that is 100% ESTATE grown.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21178/dos-lagos-vineyards"
     },
     {
@@ -7183,7 +7049,6 @@ winery_data = [
         "address2": "Napa CA 94559",
         "city": "Napa",
         "region": "Napa Valley",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/42903/alpha-omega-collective"
     },
     {
@@ -7862,7 +7727,6 @@ winery_data = [
         "address2": "Soledad CA 93960",
         "city": "Soledad",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2539/carmel-road-winery"
     },
     {
@@ -7871,7 +7735,6 @@ winery_data = [
         "address2": "Carmel Valley CA 93924",
         "city": "Carmel Valley",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/2923/chateau-sinnet"
     },
     {
@@ -7889,7 +7752,6 @@ winery_data = [
         "address2": "Carmel CA 93921",
         "city": "Carmel",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/18922/dawn-s-dream-winery"
     },
     {
@@ -7898,7 +7760,6 @@ winery_data = [
         "address2": "Carmel CA 93921",
         "city": "Carmel",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/18921/de-tierra-vineyards"
     },
     {
@@ -7917,7 +7778,6 @@ winery_data = [
         "address2": "Carmel Valley CA 93924",
         "city": "Carmel Valley",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/5439/georis-winery"
     },
     {
@@ -7936,7 +7796,6 @@ winery_data = [
         "address2": "Carmel Valley CA 93924",
         "city": "Carmel Valley",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/6079/heller-estate"
     },
     {
@@ -7965,7 +7824,6 @@ winery_data = [
         "address2": "Saratoga CA 95070",
         "city": "Saratoga",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/8609/michaud-vineyard"
     },
     {
@@ -8012,7 +7870,6 @@ winery_data = [
         "address2": "Carmel CA 93923",
         "city": "Carmel",
         "region": "Monterey",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/18920/wrath-tasting-room"
     },
     {
@@ -8022,7 +7879,6 @@ winery_data = [
         "city": "Soledad",
         "region": "Monterey",
         "about": "Wrath produces site-driven Pinot Noir, Chardonnay, Syrah, and Sauvignon Blanc from our estate vineyard and respected properties in the Santa Lucia Highlands. Our production is small, our distribution is limited and our wines reveal attitude, passion, and",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14916/wrath-wines"
     },
     {
@@ -8031,7 +7887,6 @@ winery_data = [
         "address2": "Geyserville CA 95441",
         "city": "Geyserville",
         "region": "Sonoma",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/42600/zialena-winery"
     },
     {
@@ -8561,8 +8416,11 @@ winery_data = [
         "address2": "Healdsburg CA 95448",
         "city": "Healdsburg",
         "region": "Sonoma",
+        "about": "Designed to “Frame the Vineyard,” the winery features panoramic views of the Alexander Valley bench and our surrounding 113-acre estate and 75 acres of prime Cabernet Sauvignon vineyard. Upon arrival, guests are welcomed into our modern barn-inspired tasting room adjacent to the iconic Silver Oak water tower. Visitors will gain a deeper understanding of how sustainable vineyard management contributes to wine quality, as well as the technologies and practices we apply toward resource management and vineyard health.",
+        "tastingcost": 50,
+        "rezrequired": "Reservations Required",
         "imagesrc": "https://winecountry-media.s3.amazonaws.com/5613-media-Silver-Oak-Cellars.jpg.300x300.jpg",
-        "website": "https://www.winecountry.com/businesses/12221/silver-oak-cellars"
+        "website": "https://silveroak.com/visit/alexander-valley/"
     },
     {
         "name": "Simi Winery",
@@ -9215,7 +9073,6 @@ winery_data = [
         "city": "Petaluma",
         "region": "Sonoma",
         "about": "Enjoy country living less than hour from San Francisco. Take in the striking beauty of our estate through delightful and intimate tasting experiences.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/21285/mcevoy-ranch"
     },
     {
@@ -9507,7 +9364,6 @@ winery_data = [
         "city": "Petaluma",
         "region": "Sonoma",
         "about": "This winery specializes in fruit driven wines and also imports and exports wines and Champagnes.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9911/pacific-estates-champagne-world-wines"
     },
     {
@@ -10232,7 +10088,6 @@ winery_data = [
         "city": "Santa Rosa",
         "region": "Sonoma",
         "about": "Those with a sophisticated palate will want to try an exclusive, custom made wine. Experienced professionals provide only the most diligent assistance to discerning customers.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/16981/jj-custom-wines"
     },
     {
@@ -10973,7 +10828,6 @@ winery_data = [
         "city": "Sebastopol",
         "region": "Sonoma",
         "about": "Though there isn’t a designated tasting room for this winery, they offer various tasting events throughout Sonoma County. Check their website for details.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/3817/d-l-carinalli-vineyards"
     },
     {
@@ -11168,7 +11022,6 @@ winery_data = [
         "address2": "Windsor CA 95492",
         "city": "Windsor",
         "region": "Sonoma",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/9075/dumol"
     },
     {
@@ -11288,7 +11141,6 @@ winery_data = [
         "city": "Healdsburg",
         "region": "Sonoma",
         "about": "The focus of this small winery is on small lot, single vineyard Cabernet Sauvignon, Syrah, Chardonnay, and Pinot Noir, as well as several other varieties uncommon in Northern Californian vineyards.",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/14459/arnot-roberts"
     },
     {
@@ -11529,7 +11381,6 @@ winery_data = [
         "address2": "Petaluma CA 94952",
         "city": "Petaluma",
         "region": "Sonoma",
-        "imagesrc": "https:",
         "website": "https://www.winecountry.com/businesses/43430/brooks-note-winery"
     },
     {
@@ -12075,7 +11926,7 @@ winery_data = [
         "imagesrc": "https://winecountry-media.s3.amazonaws.com/22344-media-Anaba-JulyAugHero-800x800.jpg.300x300.jpg",
         "website": "https://www.winecountry.com/businesses/479/anaba-wines"
     }
-]
+];
 
 winery_data.each do |winery| 
     Winery.create(winery)
