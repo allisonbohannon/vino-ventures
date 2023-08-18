@@ -5,7 +5,7 @@ import FilterBar from '../components/FilterBar';
 import {Box, Button, Typography} from '@mui/material'
 
 
-function Wineries({wineries, regionCities}) {
+function Wineries({wineries, regionCities, searchTerm}) {
 
     const [cityFilter, setCityFilter] = useState([])
     const [rezFilter, setRezFilter] = useState(true)
@@ -22,15 +22,17 @@ function Wineries({wineries, regionCities}) {
     })
 
     const regionalWineries = filterWineries.filter(winery => cityFilter.includes(winery.city))
- 
-
+  
     const displayWineries = () => {
       let array;
       if (cityFilter.length === 0) {
         array = filterWineries;
       } else {
         array = regionalWineries;
-      }
+      }; 
+      if (searchTerm) { 
+        array = array.filter(winery => winery.name.toLowerCase().includes(searchTerm))
+      }; 
       return array.map(winery=> {
         return <li key={winery.id} style={{listStyle:'none'}}><WineryCard winery={winery}/></li>
     })

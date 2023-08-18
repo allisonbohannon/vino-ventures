@@ -1,13 +1,15 @@
 import React from 'react'
-import { AppBar, Box, Toolbar, IconButton, Typography, Button } from '@mui/material'
+import { AppBar, Box, Toolbar, IconButton, Button } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
+import SearchBar from './SearchBar';
 
 
-const TopNav = () => {
+const TopNav = ({searchTerm, setSearchTerm,}) => {
+ 
   return (
     <Box sx={{ flexGrow: 1 }}>
-        <AppBar elevation={0} position="fixed" sx={{backgroundColor:"#722F37"}}>
-        <Toolbar>
+        <AppBar elevation={0} position="fixed" sx={{backgroundColor:"#722F37", fontSize:'2em' }}>
+        <Toolbar sx={{justifyContent:"space-between"}}>
           <IconButton
             size="large"
             edge="start"
@@ -17,10 +19,10 @@ const TopNav = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
+          <Box sx={{display:"flex", alignItems:"center"}}>
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+            <Button color="inherit">Login</Button>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>

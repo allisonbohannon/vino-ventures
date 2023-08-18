@@ -26,14 +26,17 @@ function App() {
         
       }, []);
 
+      const [searchTerm, setSearchTerm] = useState('')
+      
     return (
         <div>
             <ThemeProvider theme={theme}>          
-                <TopNav />
+                <TopNav searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
                 <Routes>
                     <Route path="/" element={<Wineries
                         wineries={wineries}
                         regionCities={regionCities}
+                        searchTerm={searchTerm}
                     />}/>
                 </Routes>
             </ThemeProvider>
