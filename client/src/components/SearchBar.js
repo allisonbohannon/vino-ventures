@@ -50,14 +50,15 @@ const SearchBar = ({searchTerm, setSearchTerm}) => {
     <form >
             <Search>
                 <SearchIconWrapper>
-                    <SearchIcon />
-                        </SearchIconWrapper>
-                            <StyledInputBase
-                                    placeholder="search wineries  "
-                                    inputProps={{ 'aria-label': 'search' }}
-                                    value={searchTerm}
-                                    onChange={(e)=>setSearchTerm(e.target.value)}
-                                />
+                    <SearchIcon sx={{fontSize:".9em", }} />
+                </SearchIconWrapper>
+                 <StyledInputBase
+                    placeholder="search wineries  "
+                    inputProps={{ 'aria-label': 'search' }}
+                    value={searchTerm}
+                    onChange={(e)=>setSearchTerm(e.target.value)}
+                    sx={{margin:".7em"}}
+                  />
             </Search>
     </form>
   )
