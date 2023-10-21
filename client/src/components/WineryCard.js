@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper, Stack, Rating, Tooltip, CardActionArea, Link } from '@mui/material'
+import { Card, CardContent, CardMedia, Typography, Box, IconButton, Divider, Paper, Stack, Rating, Tooltip} from '@mui/material'
 import LaunchIcon from '@mui/icons-material/Launch';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -8,9 +7,6 @@ import RateReviewIcon from '@mui/icons-material/RateReview';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 function WineryCard({winery}) {
-
-  const navigate = useNavigate(); 
-  const handleClick = () => {navigate(`/`)}
 
   const [isFavorite, setIsFavorite] = useState(false)
 
@@ -30,10 +26,8 @@ function WineryCard({winery}) {
                         />
                 </CardMedia>
                 <CardContent sx={{display:"block", position:"relative", minWidth:"65%"}}>
-                    <CardActionArea onClick={handleClick}>
-                        <Typography variant="h5" sx={{textAlign:"center", color:"#722F37"}}>{winery.name}</Typography>
-                        <Typography  sx={{textAlign:"center", color:"gray"}}>{winery.city}</Typography>
-                    </CardActionArea>
+                    <Typography variant="h5" sx={{textAlign:"center", color:"#722F37"}}>{winery.name}</Typography>
+                    <Typography  sx={{textAlign:"center", color:"gray"}}>{winery.city}</Typography>
                     <Divider />
                     <Box sx={{display:"flex", justifyContent:"center", minWidth:"65%"}}>
                         <Rating  value={winery.avg_rating} disabled/>
@@ -61,12 +55,9 @@ function WineryCard({winery}) {
                             <Tooltip title="View Map"><IconButton><LocationOnIcon /></IconButton> </Tooltip>
                             <Tooltip title="Favorite" ><IconButton onClick={handleFavorite} >{isFavorite === true? <FavoriteIcon /> : <FavoriteBorderIcon  />}</IconButton></Tooltip>
                         </Box>
-                    </Box>  
-                    
+                    </Box>    
             </CardContent>
-            
         </Card> 
-        
     </Paper>
 
   )

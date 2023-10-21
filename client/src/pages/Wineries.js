@@ -49,7 +49,7 @@ function Wineries({wineries, regionCities, searchTerm}) {
         <FilterBar maxCost={maxCost} setMaxCost={setMaxCost} rezFilter={rezFilter} setRezFilter={setRezFilter}/>
         <Box sx={{display:"block", marginLeft:"20%"}}>
           <Box sx={{ width:'100%', marginTop:"3%", textAlign:"center" }}>
-            <Typography variant="h6" sx={{color:"gray"}}> Showing {Math.min(displayWineries().length, viewMore)} results of {displayWineries().length} </Typography>
+            <Typography variant="h6" sx={{color:"gray", paddingTop:'.5em'}}> Showing {Math.min(displayWineries().length, viewMore)} results of {displayWineries().length} </Typography>
           </Box>
           <Box sx={{ display:"flex", flexDirection:"column", textAlign:"center"}}> 
               {displayWineries().slice(0, viewMore)}
