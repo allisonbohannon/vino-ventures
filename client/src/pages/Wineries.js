@@ -44,14 +44,14 @@ function Wineries({wineries, regionCities, searchTerm}) {
     
   return (
     <Box sx={{display:"flex", flexDirection:"column", position:"relative", top:"100px", width:"100%"}}>
-       <Box sx={{display:'flex', justifyContent:"space-between"}}>
+       <Box sx={{display:"flex", justifyContent:"space-between"}}>
         <Sidebar  regionCities={regionCities} cityFilter={cityFilter} setCityFilter={setCityFilter} /> 
         <FilterBar maxCost={maxCost} setMaxCost={setMaxCost} rezFilter={rezFilter} setRezFilter={setRezFilter}/>
-        <Box>
-          <Box sx={{width:'100%',  marginTop:"3%", textAlign:"center" }}>
+        <Box sx={{display:"block", marginLeft:"20%"}}>
+          <Box sx={{ width:'100%', marginTop:"3%", textAlign:"center" }}>
             <Typography variant="h6" sx={{color:"gray"}}> Showing {Math.min(displayWineries().length, viewMore)} results of {displayWineries().length} </Typography>
           </Box>
-          <Box sx={{ marginLeft:"30%"}}> 
+          <Box sx={{ display:"flex", flexDirection:"column", textAlign:"center"}}> 
               {displayWineries().slice(0, viewMore)}
           </Box>
           {displayWineries().length > viewMore ?  <Button variant='contained' onClick={handleClick} sx={{width:"10%", marginLeft:"55%" }} >View More</Button> : ""}

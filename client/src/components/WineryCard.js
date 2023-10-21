@@ -20,9 +20,9 @@ function WineryCard({winery}) {
   
 
   return (
-    <Paper elevation={1} sx={{ margin:"1em", width:"90%"}}>
-        <Card variant="outlined" sx={{display:'flex', justifyContent:"space-between"}} >
-                <CardMedia sx={{display:"flex", padding:".5em",}} >
+    <Paper elevation={1} sx={{ display:'flex', margin:"1em", minWidth:"90%"}}>
+        <Card variant="outlined" sx={{display:'flex', justifyContent:"space-between", width:"100%"}} >
+                <CardMedia sx={{display:"flex", padding:".5em"}} >
                     <img 
                         style={{ display:"block", maxHeight:250, maxWidth:250, margin:"auto", border:"1px solid lightgray"}}
                         src={winery.imagesrc ? winery.imagesrc : "https://img.freepik.com/free-vector/grape-fruit-cartoon-illustration-flat-cartoon-style_138676-2877.jpg"}
@@ -35,16 +35,16 @@ function WineryCard({winery}) {
                         <Typography  sx={{textAlign:"center", color:"gray"}}>{winery.city}</Typography>
                     </CardActionArea>
                     <Divider />
-                    <Box sx={{display:"flex", justifyContent:"center"}}>
+                    <Box sx={{display:"flex", justifyContent:"center", minWidth:"65%"}}>
                         <Rating  value={winery.avg_rating} disabled/>
                         { winery.total_ratings? <Typography>({winery.total_ratings})</Typography> : ""}
                     </Box>
-                    <Typography sx={{fontStyle:"italic", maxHeight:"30%", overflow:"auto"}}>{winery.about}</Typography>
+                    <Typography sx={{fontStyle:"italic", maxHeight:"30%", overflow:"auto", padding:'.5em'}}>{winery.about}</Typography>
                     <Box sx={{display:"block", textAlign:"center", padding:".2em"}}>          
                         {winery.tastingcost? <Typography variant="h6">  ⎯ Tastings From ${winery.tastingcost} ⎯ </Typography >: ""}
                     </Box>
                     <Box sx={{mb:"1em"}}>
-                        <Stack direction="row" >
+                        <Stack direction="row" sx={{paddingBottom:".5em"}} >
                             <Typography sx={{display:"block", fontWeight:"bold", mr:".5em" }}>Reservations Policy: </Typography>
                             {winery.rezrequired ? <Typography sx={{display:"block"}}> {winery.rezrequired}</Typography> : <Typography color="gray" sx={{fontStyle:"italic"}} >unknown</Typography>}
                         </Stack>
