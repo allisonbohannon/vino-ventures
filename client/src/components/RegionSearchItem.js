@@ -1,4 +1,4 @@
-import { ListItemButton, Typography, Box, Button } from '@mui/material';
+import { ListItemButton, Typography, Box, Button, Stack } from '@mui/material';
 import React, { useState } from 'react'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -6,24 +6,42 @@ import CitySearchItem from './CitySearchItem';
 
 const RegionSearchItem = ({region, cityFilter, setCityFilter}) => {
 
-    const [showCities, setShowCities] = useState(false)
+    const [showCities, setShowCities] = useState(false);
+
+    const selectAll = () => {
+      setCityFilter(region.cities.map(city => city));
+    };
+    
+    const clearAll = () => {
+      setCityFilter([]);
+    };
 
     const handleClick = () => {
         if (showCities === false) {
-          const cities = region.cities.map(city => city)
-          setCityFilter(cities)
+          selectAll();
         } else {
-          setCityFilter([])
+          clearAll();
         }
-        
         setShowCities(!showCities)
       };
 
-    const handleButton = () => {
-      setCityFilter([])
-    }
+    const updateCityFilter= (name, value) => {
+        if (value) {
+          setCityFilter([...cityFilter, name])
+        } else {
+          setCityFilter(cityFilter=> cityFilter.filter((city) => city !== name))
+        }
+    }    
 
-    const displayCities = region.cities.map(city => <li key={city} style={{listStyle:"none"}}><CitySearchItem city={city} cityFilter={cityFilter} setCityFilter={setCityFilter}/></li>)
+    const displayCities = region.cities.map(city => {
+      return (
+        <li key={city} style={{listStyle:"none"}}>
+          <CitySearchItem city={city} 
+                          checked={cityFilter.includes(city)} 
+                          updateCityFilter={updateCityFilter} 
+            />
+          </li>)
+          });
 
   return (
     
@@ -33,7 +51,10 @@ const RegionSearchItem = ({region, cityFilter, setCityFilter}) => {
         <Typography variant="h5">{region.region}</Typography>
         {showCities ?  <ExpandLessIcon /> : <ExpandMoreIcon/> }
       </ListItemButton>
-      {/* <Box sx={{textAlign:"center"}}>{showCities? <Button onClick={handleButton} >Clear All</Button> : ""}</Box> */}
+      <Stack direction="row" sx={{display:"flex", justifyContent:"space-evenly"}}>
+        <Box sx={{textAlign:"center"}}>{showCities? <Button onClick={selectAll} >Select All</Button> : ""}</Box>
+        <Box sx={{textAlign:"center"}}>{showCities? <Button onClick={clearAll} >Clear All</Button> : ""}</Box>
+      </Stack>
       <ul>{showCities ? displayCities : "" }</ul>
     </Box>
   )

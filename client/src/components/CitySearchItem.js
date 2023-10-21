@@ -1,23 +1,21 @@
-import { Box, Checkbox, FormControl, FormControlLabel, FormGroup, Typography } from '@mui/material'
-import React, {useState} from 'react'
+import { Checkbox,  FormControlLabel, FormGroup } from '@mui/material'
+import React from 'react'
 
-const CitySearchItem = ({city, cityFilter, setCityFilter}) => {
+const CitySearchItem = ({city, checked, updateCityFilter,}) => {
 
-    const [checked, setChecked] = useState(true)
+    const handleChange= (e) => {
+       updateCityFilter(e.target.value, !checked)
 
-    const handleClick = (e) => {
-        if (checked === false) {
-            setCityFilter([...cityFilter, e.target.value])
-        }
-        else {
-            setCityFilter(cityFilter => cityFilter.filter(index => index != e.target.value))
-        }
-        setChecked(!checked)
     }
-
+    
   return (
-        <FormGroup  sx={{marginLeft:"1em"}}>
-            <FormControlLabel control={<Checkbox onClick={handleClick} checked={checked} />} label={city} value={city} />
+        <FormGroup  sx={{marginLeft:0}}>
+            <FormControlLabel control={<Checkbox 
+                                        onChange={handleChange}
+                                        checked={checked} 
+                                        />} 
+                              label={city} 
+                              value={city} />
         </FormGroup>
   )
 }
