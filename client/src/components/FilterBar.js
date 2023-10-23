@@ -20,7 +20,7 @@ const FilterBar = ({rezFilter, setRezFilter, maxCost, setMaxCost, minRating, set
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-        <AppBar elevation={0} sx={{position:"fixed", top:"64px", marginLeft:"30%", right:0, width:"80%", color:"black", backgroundColor:"white", }}>
+        <AppBar elevation={0} sx={{position:"fixed", marginTop:"4em", marginLeft:"30%", right:0, width:"80%", color:"black", backgroundColor:"white", }}>
             <Stack spacing={4} direction="row" sx={{justifyContent:"space-around" }} alignItems="center">
                 <Stack spacing={2} direction="row" alignItems="center" sx={{width:"30%"}}>
                   <Switch onClick={handleRez}></Switch>

@@ -7,7 +7,7 @@ import SearchBar from './SearchBar';
 const TopNav = ({searchTerm, setSearchTerm,}) => {
  
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{}}>
         <AppBar elevation={0} position="fixed" sx={{backgroundColor:"#722F37", fontSize:'2em' }}>
         <Toolbar sx={{justifyContent:"space-between"}}>
           <IconButton

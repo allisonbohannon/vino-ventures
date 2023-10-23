@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
-import { ThemeProvider } from "@mui/material";
+import { Container, Box, ThemeProvider } from "@mui/material";
 import theme from "../context/theme";
 import Wineries from "../pages/Wineries";
 import TopNav from "./TopNav";
@@ -29,15 +29,17 @@ function App() {
       
     return (
         <div>
-            <ThemeProvider theme={theme}>          
-                <TopNav searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-                <Routes>
-                    <Route path="/" element={<Wineries
-                        wineries={wineries}
-                        regionCities={regionCities}
-                        searchTerm={searchTerm}
-                    />}/>
-                </Routes>
+            <ThemeProvider theme={theme}>
+                    <TopNav searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+                    <Box sx={{marginTop:"4em"}} >
+                        <Routes>
+                            <Route path="/" element={<Wineries
+                                wineries={wineries}
+                                regionCities={regionCities}
+                                searchTerm={searchTerm}
+                            />}/>
+                        </Routes>
+                    </Box>     
             </ThemeProvider>
         </div>
     )

@@ -10,7 +10,7 @@ function Sidebar({regionCities, cityFilter, setCityFilter}) {
     })
 
   return (
-    <Box sx={{display:"block", width:"20%", height:"100%", position:"fixed", top:"10%", backgroundColor:"beige", overflow:"auto"}}>
+    <Box sx={{position:"fixed", width:"20%", height:"100%", backgroundColor:"beige", overflow:"auto"}}>
         <List>
             {displayRegions}
         </List>
